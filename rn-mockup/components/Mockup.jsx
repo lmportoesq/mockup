@@ -7,7 +7,7 @@ const Mockup=()=> {
         <image source = {{url}} />
         <Text>Title</Text>
         <Text>autor</Text>
-        <Text>Labels style={styles.labels} </Text>
+        <Text style={styles.labels}>Labels </Text>
         <Text>comments</Text>
     </View >
   );
@@ -16,6 +16,7 @@ const Mockup=()=> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    borderColor: '#fff',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
