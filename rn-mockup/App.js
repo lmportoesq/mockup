@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Mockup from './components/Mockup';
+import data from '../data';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Mockup />
+      {data.map(dataItem =>(
+        <Mockup key = {dataItem.id} data = {dataItem} />
+      ))}
     </View>
   );
 }
